@@ -1,4 +1,4 @@
-from ..Utils import herramienta_utils as hu
+import herramienta_utils as hu
 
 class Npc():
     nombre = ''
@@ -11,12 +11,12 @@ class Npc():
 
     def __init__(self, nombre):
         self.nombre = nombre
-        self.fuerza = hu.dados(6,1)
-        self.destreza = hu.dados(6,1)
-        self.constitucion = hu.dados(6,1)
-        self.inteligencia = hu.dados(6,1)
-        self.sabiduria = hu.dados(6,1)
-        self.carisma = hu.dados(6,1)
+        self.fuerza = hu.dados(6,4)
+        self.destreza = hu.dados(6,4)
+        self.constitucion = hu.dados(6,4)
+        self.inteligencia = hu.dados(6,4)
+        self.sabiduria = hu.dados(6,4)
+        self.carisma = hu.dados(6,4)
 
     def show_stats(self):
         print(f'Nombre = {self.nombre}')
